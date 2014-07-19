@@ -8,7 +8,7 @@ scan:
 #    these_subreddits: ["all"]
 
 help:
-    enabled: true
+    enabled: false
     url: 'http://www.reddit.com/r/mysubreddit/wiki/index'
 
 contact:
