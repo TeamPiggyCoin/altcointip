@@ -1,5 +1,5 @@
 times:
-    sleep_seconds: 60
+    sleep_seconds: 15
     expire_pending_hours: 48
 
 backup:
