@@ -277,7 +277,7 @@ actions:
         simple: true
         regex: '(\+)(history)'
     redeem:
-        enabled: true
+        enabled: false
         public: false
         simple: false
         regex:
