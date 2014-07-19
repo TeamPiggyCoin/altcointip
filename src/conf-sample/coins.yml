@@ -8,7 +8,7 @@ dvc:
     config_rpcserver: '127.0.0.1'
     minconf:
         givetip: 1
-        withdraw: 144
+        withdraw: 6
     txmin:
         givetip: 0.1
         withdraw: 0.5
