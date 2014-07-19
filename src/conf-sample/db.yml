@@ -1,9 +1,9 @@
 auth:
-    user: 'mysqluser'
+    user: 'root'
     password: 'mysqlpass'
     host: localhost
     port: 3306
-    dbname: mysqldb
+    dbname: tipbot
 
 sql:
   globalstats:
