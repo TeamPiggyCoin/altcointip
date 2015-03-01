@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `t_action` (
   `coin_val` float unsigned DEFAULT NULL,
   `fiat_val` float unsigned DEFAULT NULL,
   `txid` varchar(64) DEFAULT NULL,
-  `coin` varchar(3) DEFAULT NULL,
+  `coin` varchar(5) DEFAULT NULL,
   `fiat` varchar(3) DEFAULT NULL,
   `subreddit` varchar(30) DEFAULT NULL,
   `msg_id` varchar(10) NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `t_action` (
 
 CREATE TABLE IF NOT EXISTS `t_addrs` (
   `username` varchar(30) NOT NULL,
-  `coin` varchar(3) NOT NULL,
+  `coin` varchar(5) NOT NULL,
   `address` varchar(34) NOT NULL,
   PRIMARY KEY (`username`,`coin`),
   UNIQUE KEY `address` (`address`)

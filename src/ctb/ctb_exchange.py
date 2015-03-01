@@ -97,7 +97,7 @@ class CtbExchange(object):
                         connection.request("GET", myurlpath)
                     response = json.loads(connection.getresponse().read())
                     result = xpath_get(response, myjsonpath)
-                    lg.debug("CtbExchange::get_ticker_value(%s, %s, %s): result: %.6f", self.conf.domain, _name1, _name2, float(result))
+                    lg.debug("CtbExchange::get_ticker_value(%s, %s, %s): result: %.8f", self.conf.domain, _name1, _name2, float(result))
                     results.append( float(result) )
 
                 except urllib2.URLError as e:
