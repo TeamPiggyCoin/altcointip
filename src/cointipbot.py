@@ -144,7 +144,7 @@ class CointipBot(object):
             actions = ctb_action.get_actions(atype='givetip', state='pending', coin=c, ctb=self)
             for a in actions:
                 pending_tips += a.coinval
-            if (ctb_balance - pending_tips) < -0.000001:
+            if (ctb_balance - pending_tips) < -0.00001:
                 raise Exception("CointipBot::self_checks(): CointipBot's %s balance (%s) < total pending tips (%s)" % (c.upper(), ctb_balance, pending_tips))
 
         # Ensure coin balances are positive
