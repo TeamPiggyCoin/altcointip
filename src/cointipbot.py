@@ -262,7 +262,8 @@ class CointipBot(object):
              pass
         except Exception as e:
             lg.error("CointipBot::check_inbox(): %s", e)
-            raise
+            #raise
+            pass
 
         lg.debug("< CointipBot::check_inbox() DONE")
         return True
