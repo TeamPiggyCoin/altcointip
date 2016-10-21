@@ -1,21 +1,22 @@
-# Devcoin
-dvc:
+# PiggyCoin
+piggy:
     enabled: true
-    unit: dvc
-    name: Devcoin
-    symbol: 'Ð'
-    config_file: '~/.devcoin/devcoin.conf'
+    unit: piggy
+    name: PiggyCoin
+    symbol: 'p'
+    config_file: '~/.newpiggycoin/newpiggycoin.conf'
     config_rpcserver: '127.0.0.1'
     minconf:
-        givetip: 1
-        withdraw: 6
+        givetip: 3
+        withdraw: 10
     txmin:
-        givetip: 0.1
-        withdraw: 0.5
-    txfee: 0.5
+        givetip: 0.0001
+        withdraw: 10
+    txfee: 0.00001
     explorer:
-        address: 'http://devcoinblockexplorer.info/address/'
-        transaction: 'http://devcoinblockexplorer.info//tx/'
+        address: 'https://chainz.cryptoid.info/piggy/address.dws?'
+        transaction: 'https://chainz.cryptoid.info/piggy/tx.dws?'
     regex:
-        address: '(1[1-9a-z]{20,40})'
-        units: '(dvc|devcoin|devcoins|Ð)'
+        address: '(p[1-9a-z]{20,40})'
+        units: '(piggy|pig|piggycoin|piggycoins)'
+

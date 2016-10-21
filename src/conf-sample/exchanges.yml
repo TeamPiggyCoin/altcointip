@@ -1,3 +1,53 @@
+tradesatoshi.com:
+    enabled: true
+    domain: 'tradesatoshi.com'
+    https: true
+    urlpaths: ['/api/public/getmarketsummary?market={THING_FROM}_{THING_TO}']
+    jsonpaths: ['result.last']
+    coinlist: ['btc','piggy']
+    fiatlist: []
+    uppercase: true
+
+novaexchange:
+    enabled: true
+    domain: 'novaexchange.com'
+    https: true
+    urlpaths: ['/remote/v2/market/info/{THING_TO}_{THING_FROM}/']
+    jsonpaths: ['.markets[0].last_price']
+    coinlist: ['btc','piggy']
+    fiatlist: []
+    uppercase: true
+
+coinexchange:
+    enabled: true
+    domain: 'www.coinexchange.io'
+    https: true
+    urlpaths: ['/api/v1/getmarketsummary?market_id=63']
+    jsonpaths: ['result.LastPrice']
+    coinlist: ['btc','piggy']
+    fiatlist: []
+    uppercase: false
+
+cryptopia:
+    enabled: true
+    domain: 'www.cryptopia.co.nz'
+    https: true
+    urlpaths: ['/api/GetMarket/1672']
+    jsonpaths: ['Data.LastPrice']
+    coinlist: ['btc','piggy']
+    fiatlist: []
+    uppercase: false
+
+poloniex:
+    enabled: false
+    domain: 'poloniex.com'
+    https: true
+    urlpaths: ['/public?command=returnTicker']
+    jsonpaths: ['{THING_TO}_{THING_FROM}.highestBid','{THING_TO}_{THING_FROM}.lowestAsk']
+    coinlist: ['btc','piggy']
+    fiatlist: []
+    uppercase: true
+
 blockchaininfo:
     enabled: true
     domain: 'blockchain.info'
@@ -37,16 +87,6 @@ bitstamp:
     coinlist: ['btc']
     fiatlist: ['usd']
     uppercase: false
-
-mtgox:
-    enabled: false
-    domain: 'data.mtgox.com'
-    https: true
-    urlpaths: ['/api/2/{THING_FROM}{THING_TO}/money/ticker_fast']
-    jsonpaths: ['data.buy.value']
-    coinlist: ['btc']
-    fiatlist: ['usd','eur','jpy','gbp','rub']
-    uppercase: true
 
 campbx:
     enabled: true
